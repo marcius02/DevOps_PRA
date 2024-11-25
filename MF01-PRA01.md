@@ -31,13 +31,15 @@ In this practical exercise, you will enhance your skills in creating, managing, 
 #### 1\. Create a Local Markdown Quarto Website
 
 - Install **Quarto** if you haven't already. Follow the installation instructions on the [Creating a Website](https://quarto.org/docs/websites/).
-- Create a new Quarto project using the command:
 
+- Create a new Quarto project using the command:
+  
   ```bash
   quarto create-project my-quarto-site
   ```
-- Navigate to the newly created project directory:
 
+- Navigate to the newly created project directory:
+  
   ```bash
   cd my-quarto-site
   ```
@@ -45,34 +47,40 @@ In this practical exercise, you will enhance your skills in creating, managing, 
 #### 2\. Modify the Website
 
 - **Add Call-outs:**
+  
   - Use call-outs to highlight important information. For example:
-
+    
     ```markdown
     ::: callout
     This is an important note.
     :::
     ```
-- **Create New Pages:**
-  - Add new Markdown files to create additional pages. For example, create a `about.md` file and add it to `_quarto.yml`:
 
+- **Create New Pages:**
+  
+  - Add new Markdown files to create additional pages. For example, create a `about.md` file and add it to `_quarto.yml`:
+    
     ```markdown
     # About
     This is the about page.
     ```
-- **Basic Formatting and Layout:**
-  - Use Markdown syntax to format your content. For example:
 
+- **Basic Formatting and Layout:**
+  
+  - Use Markdown syntax to format your content. For example:
+    
     ```markdown
     # Heading
     ## Subheading
     This is a paragraph with *italic* and **bold** text.
     ```
+  
   - Customize the layout by editing the `_quarto.yml` file.
 
 #### 3\. Implement Website Navigation
 
 - Configure the navigation menu by editing the `_quarto.yml` file. For example:
-
+  
   ```yml
   nav:
     - Home: index.qmd
@@ -83,21 +91,22 @@ In this practical exercise, you will enhance your skills in creating, managing, 
 #### 4\. Include Mermaid Diagrams
 
 - Install the Mermaid extension for Quarto if you haven't already. Add the following to your `_quarto.yml` file:
-
+  
   ```yml
   extensions:
     - mermaid
   ```
-- Include Mermaid diagrams in your Markdown files. For example:
 
-  ````markdown
+- Include Mermaid diagrams in your Markdown files. For example:
+  
+  ```markdown
   ``` mermaid
   graph LR
       A[Client] --> B[Load Balancer]
       B --> C[Server1]
       B --> D[Server2]
-  ````
-
+  ```
+  
   ```
   ---
   title: Animal example
@@ -125,13 +134,12 @@ In this practical exercise, you will enhance your skills in creating, managing, 
           +bool is_wild
           +run()
       }
-  
   ```
 
 #### 5\. Configure the `_quarto.yml` File
 
 - Customize the site's metadata, theme, and other settings in the `_quarto.yml` file. For example:
-
+  
   ```yml
   title: "My Quarto Site"
   author: "Your Name"
@@ -141,22 +149,25 @@ In this practical exercise, you will enhance your skills in creating, managing, 
 #### 6\. Set Up a Git Repository and Link to GitHub
 
 - Initialize a Git repository in your project directory:
-
+  
   ```bash
   git init
   ```
-- Add all files to the repository:
 
+- Add all files to the repository:
+  
   ```bash
   git add .
   ```
-- Commit the changes:
 
+- Commit the changes:
+  
   ```bash
   git commit -m "Initial commit"
   ```
-- Create a new repository on GitHub and link it to your local repository:
 
+- Create a new repository on GitHub and link it to your local repository:
+  
   ```bash
   git remote add origin https://github.com/your-username/your-repo-name.git
   git push -u origin main
@@ -165,8 +176,9 @@ In this practical exercise, you will enhance your skills in creating, managing, 
 #### 7\. Publish the Website to GitHub Pages
 
 - Configure GitHub Pages to serve your Quarto site. Go to your repository settings on GitHub, navigate to the "Pages" section, and select the branch you want to use (e.g., `main`).
-- Use the Quarto command to render and deploy your site to GitHub Pages:
 
+- Use the Quarto command to render and deploy your site to GitHub Pages:
+  
   ```bash
   quarto publish gh-pages
   ```
