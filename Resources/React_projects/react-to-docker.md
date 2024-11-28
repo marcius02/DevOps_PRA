@@ -72,5 +72,3 @@ docker run -d -p 80:80 books-frontend
 ![](https://raw.githubusercontent.com/AlbertProfe/DevOps_PRA/6e2d40fa94eddec7ca2c12578b3df339c39ceedf/Resources/React_projects/docker_cli_screenshots/2024-11-27-18-28-12-image.png)
 
 ![](https://raw.githubusercontent.com/AlbertProfe/DevOps_PRA/6e2d40fa94eddec7ca2c12578b3df339c39ceedf/Resources/React_projects/docker_cli_screenshots/2024-11-27-18-27-52-image.png)
-
-
