@@ -35,11 +35,15 @@ Software requirements:
 
 *Links*
 
-https://www.jenkins.io/doc/book/installing/linux/
+Installing [Linux](https://www.jenkins.io/doc/book/installing/linux/)
 
-https://hub.docker.com/r/jenkins/jenkins
+Installing [Docker](https://www.jenkins.io/doc/book/installing/docker/)
 
-[docker/README.md at master · jenkinsci/docker · GitHub](https://github.com/jenkinsci/docker/blob/master/README.md)
+Download docker for [Jenkins](https://hub.docker.com/r/jenkins/jenkins)
+
+Official Jenkins Docker [image]([docker/README.md at master · jenkinsci/docker · GitHub](https://github.com/jenkinsci/docker/blob/master/README.md))
+
+
 
 # Pipeline
 
