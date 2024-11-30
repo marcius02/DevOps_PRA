@@ -46,6 +46,23 @@ docker run -d --name jenkins jenkins/jenkins:lts
 
 State Transition: Created → Running
 
+## docker pause
+
+Suspends all processes in the specified containers.
+
+```bash
+`docker pause jenkins`
+```
+
+State: Running → Paused
+
+*Key Differences*
+
+- `docker start`: Restarts a stopped container, resuming processes.
+- `docker pause`: Suspends processes in a running container without termination.
+
+
+
 ### docker stop
 
 Stops a running container.
@@ -66,7 +83,7 @@ docker start jenkins
 
 State Transition: Exited → Running
 
-### Key Difference
+*Key Differenced*
 
 - `docker start`: Restarts an existing stopped container.
 - `docker run`: Creates a new container instance.
@@ -75,7 +92,7 @@ State Transition: Exited → Running
 
 The main difference between `docker stop` and `docker kill` lies in how they terminate containers:
 
-## Docker Stop
+**Docker Stop**
 
 - Sends a SIGTERM signal first, allowing for graceful shutdown
 
@@ -85,7 +102,7 @@ The main difference between `docker stop` and `docker kill` lies in how they
 
 - Preferred for normal container shutdown
 
-## Docker Kill
+**Docker Kill**
 
 - Sends a SIGKILL signal immediately
 
@@ -101,7 +118,7 @@ The main difference between `docker stop` and `docker kill` lies in how they
 
 It's generally recommended to use `docker stop` first, and only resort to `docker kill` if the container doesn't respond or you need immediate termination[
 
-## Key Differences: Docker Stop vs Docker Kill
+### Key Differences: Docker Stop vs Docker Kill
 
 | Aspect              | Docker Stop           | Docker Kill             |
 | ------------------- | --------------------- | ----------------------- |
