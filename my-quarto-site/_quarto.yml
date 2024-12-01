@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: my-quarto-site
 
 website:
   title: "My Quarto site"
@@ -12,7 +13,7 @@ website:
 
 format:
   html:
-    theme: journals
+    theme: yeti
     css: styles.css
     toc: true
 
