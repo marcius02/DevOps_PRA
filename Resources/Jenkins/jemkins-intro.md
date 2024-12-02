@@ -1,8 +1,8 @@
 # Jenkins
 
-# Installing
+## Installing
 
-## Prerequisites
+### Prerequisites
 
 Minimum hardware requirements:
 
@@ -43,9 +43,7 @@ Download docker for [Jenkins](https://hub.docker.com/r/jenkins/jenkins)
 
 Official Jenkins Docker [image]([docker/README.md at master · jenkinsci/docker · GitHub](https://github.com/jenkinsci/docker/blob/master/README.md))
 
-
-
-# Pipeline
+## Pipeline
 
 To automate the deployment of a <mark>Spring Boot project from GitHub using Jenkins and Docker</mark>, follow these steps:
 
@@ -65,7 +63,7 @@ To automate the deployment of a <mark>Spring Boot project from GitHub using Jenk
    
    - Consider deploying to platforms like AWS, Azure, or Google Cloud for scalability and reliability
 
-## Dockerfile
+### Dockerfile
 
 Create a `Dockerfile` in your Spring Boot project directory
 
@@ -89,7 +87,7 @@ ADD ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
 ```
 
-## Jenkinsfile
+### Jenkinsfile
 
 Create a `Jenkinsfile` in your <mark>project root.</mark> To use the pipeline:
 
@@ -124,7 +122,7 @@ Explanation of the Pipeline Stage
 - **withCredentials**: This block allows Jenkins to use the specified AWS credentials securely during the execution of commands within it.
 - **sh command**: The command `aws ecs update-service` updates your ECS service with a new deployment, ensuring that it uses the latest Docker image that was pushed earlier in the pipeline
 
-## Deployment on AWS
+### Deployment on AWS
 
 We are using ECS AWS:
 
@@ -152,6 +150,8 @@ AWS can retrieve Docker images from Docker Hub, but it typically involves a few 
 
 This process ensures that your Docker images are securely stored and easily accessible within your AWS environment, facilitating seamless deployment and scaling of applications.
 
-## Execute Pipeline
+### Execute Pipeline
 
-> Run your Jenkins pipeline. The deployment command will execute using the fake credentials you configured, simulating what would happen in a real environment without making actual changes to any AWS resources.
+Run your Jenkins pipeline. 
+
+> The deployment command will execute using the fake credentials you configured, simulating what would happen in a real environment without making actual changes to any AWS resources.
