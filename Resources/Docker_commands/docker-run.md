@@ -2,7 +2,7 @@
 
 ## first container
 
-![](/home/albert/.var/app/com.github.marktext.marktext/config/marktext/images/2024-12-03-17-37-01-image.png)
+![](https://github.com/AlbertProfe/DevOps_PRA/blob/master/Resources/Docker_commands/docker-irun.png)
 
 ```bash
 docker run -d -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock --name jenkins jenkins/jenkins:lts
@@ -17,8 +17,6 @@ This command creates and runs a new Jenkins container:
 - `-v /var/run/docker.sock:/var/run/docker.sock`: Mounts the Docker socket from the host to the container
 - `--name jenkins`: Names the container "jenkins"
 - `jenkins/jenkins:lts`: Specifies the Jenkins LTS image to use
-
-
 
 ### docker create
 
@@ -44,8 +42,6 @@ docker start jenkins
 ```
 
 This approach allows you to set up the container configuration ahead of time without introducing any side effects from starting the container immediately.
-
-
 
 ```bash
 docker create -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock --name jenkins jenkins/jenkins:lts
