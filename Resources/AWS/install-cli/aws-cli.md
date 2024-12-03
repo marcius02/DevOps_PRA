@@ -16,8 +16,6 @@ To install the AWS CLI on Linux Mint, follow these steps:
    
    - Verify installation:
      
-     bash
-     
      `aws --version`
 
 ## AWS Credentials
