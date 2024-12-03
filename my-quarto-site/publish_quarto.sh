@@ -37,7 +37,7 @@ else
 fi
 
 # Publish to GitHub Pages using quarto
-quarto publish gh-pages --no-render --no-prompt
+quarto publish gh-pages --no-render --no-prompt --no-browser
 if [ $? -eq 0 ]; then
     log_message "Quarto site published successfully"
 else
