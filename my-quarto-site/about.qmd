@@ -2,4 +2,4 @@
 title: "About"
 ---
 
-About this site
+DevOps documentation will be published in this Quarto website.
