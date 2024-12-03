@@ -1,5 +1,3 @@
-
-
 # docker run
 
 ```bash
@@ -10,8 +8,6 @@ docker run -d -p 8080:8080 -p 50000:50000
 jenkins/jenkins:lts
 ```
 
-
-
 This command creates and runs a new Jenkins container:
 
 - `-d`: Runs the container in detached mode (in the background)
@@ -21,3 +17,13 @@ This command creates and runs a new Jenkins container:
 - `-v /var/run/docker.sock:/var/run/docker.sock`: Mounts the Docker socket from the host to the container
 - `--name jenkins`: Names the container "jenkins"
 - `jenkins/jenkins:lts`: Specifies the Jenkins LTS image to use
+
+## Links
+
+DockerHub Jenins
+
+https://hub.docker.com/r/jenkins/jenkins
+
+Downloading and running Jenkins in Docker
+
+https://www.jenkins.io/doc/book/installing/docker/#downloading-and-running-jenkins-in-docker
