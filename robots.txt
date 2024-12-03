@@ -1,1 +1,0 @@
-Sitemap: https://marcius02.github.io/DevOps_PRA/sitemap.xml

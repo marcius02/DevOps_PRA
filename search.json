@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Quarto site",
+    "section": "",
+    "text": "Quarto\nIt is a next-generation tool for authoring documents that combines Markdown with code execution in languages like R, Python, and Julia. It is designed for producing high-quality outputs in various formats like HTML and PDF.\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\nQuarto is an open source tools for scientific and technical publishing.\n\n\n\n\n\nMarkdown\nMarkdown is a plain text format that is designed to be easy to write, and, even more importantly, easy to read.\n\n\nAgile\n\n\n\n\n\ngraph LR\n    A(Plan) --&gt; B(Execute) --&gt; C(Review) --&gt; D(Reflect)"
+  },
+  {
     "objectID": "contact.html",
     "href": "contact.html",
     "title": "Contact",
@@ -12,12 +19,5 @@
     "title": "About",
     "section": "",
     "text": "DevOps documentation will be published in this Quarto website."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "My Quarto site",
-    "section": "",
-    "text": "Quarto\nIt is a next-generation tool for authoring documents that combines Markdown with code execution in languages like R, Python, and Julia. It is designed for producing high-quality outputs in various formats like HTML and PDF.\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\nQuarto is an open source tools for scientific and technical publishing.\n\n\n\n\n\nMarkdown\nMarkdown is a plain text format that is designed to be easy to write, and, even more importantly, easy to read.\n\n\nAgile\n\n\n\n\n\ngraph LR\n    A(Plan) --&gt; B(Execute) --&gt; C(Review) --&gt; D(Reflect)"
   }
 ]
