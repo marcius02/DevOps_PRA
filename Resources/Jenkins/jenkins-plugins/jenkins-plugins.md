@@ -2,8 +2,6 @@
 
 This table includes the plugin name with its link, a brief description, and a category for each plugin. The information is based on the commonly used Jenkins plugins and their typical functionalities.
 
-
-
 | Plugin Name                                                                             | Description                                                                                                                                           | Category               |
 | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
 | [Pipeline](https://plugins.jenkins.io/workflow-aggregator/)                             | Provides a suite of plugins that lets you orchestrate automation, simple or complex                                                                   | Pipeline               |
