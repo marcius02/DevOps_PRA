@@ -10,5 +10,3 @@ This table includes the plugin name with its link, a brief description, and a ca
 | [JDK Tool](https://plugins.jenkins.io/jdk-tool/)                        | Allows Jenkins to install JDKs from adoptium.net                                    | Tool Installation      |
 | [Docker](https://plugins.jenkins.io/docker-plugin/)                     | Allows Jenkins to use Docker containers as build agents                             | Cloud Providers        |
 | [Docker Pipeline](https://plugins.jenkins.io/docker-workflow/)          | Enables building and using Docker containers from pipelines                         | Pipeline               |
-
-

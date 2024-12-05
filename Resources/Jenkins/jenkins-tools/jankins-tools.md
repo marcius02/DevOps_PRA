@@ -8,7 +8,7 @@ In the Jenkins GUI, the Git section under Global Tool Configuration indicates th
 
 ## Maven
 
-To configure Maven installations in Jenkins with the "Install automatically" option, follow these steps:
+To configure Maven installations in Jenkins with the <mark>"Install automatically" </mark>option, follow these steps:
 
 - Go to "Manage Jenkins" > "Global Tool Configuration".
 - Scroll down to the "Maven" section and click on "Add Maven".
@@ -19,7 +19,7 @@ To configure Maven installations in Jenkins with the "Install automatically" opt
 
 ## JDK
 
-To install Java 21 in Jenkins automatically:
+To install Java 21 in<mark> Jenkins automatically:</mark>
 
 Download URL for Java 21
 
@@ -32,3 +32,17 @@ Subdirectory of Extracted Archive
 
 - **Subdirectory**: `java-21`
 - **Subdirectory**: `jdk-21.0.1`
+
+## Docker
+
+Docker integration with Jenkins allows for building, testing, and deploying applications in isolated, lightweight containers. This offers benefits such as:
+
+- Consistent environments across development, testing, and production
+- Faster builds due to Docker's layered image approach
+- Improved scalability for distributed build architectures
+
+<mark>Install automatically</mark>
+
+When checked, Jenkins will attempt to automatically install Docker on the agent where the build is running. This option is convenient for ensuring a consistent Docker environment across different build agents.
+
+- Download from docker.com with **latest version**
