@@ -59,9 +59,15 @@ To pull an image from Docker Hub and push it to the specified public ECR reposit
 
 2. Authenticate Docker to your ECR registry:
    
+   With your id repo: <mark> s4x3q8t5</mark> or a<mark> generic login</mark>
+   
    ```bash
-   aws ecr-public get-login-password --region eu-central-1 | docker login --username AWS --password-stdin public.ecr.aws
+   aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/s4x3q8t5
    ```
+
+```bash
+aws ecr-public get-login-password --region eu-central-1 | docker login --username AWS --password-stdin public.ecr.aws
+```
 
 3. Tag the Docker image with the ECR repository URI:
    
