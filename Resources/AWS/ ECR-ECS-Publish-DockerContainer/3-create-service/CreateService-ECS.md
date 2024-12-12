@@ -37,18 +37,6 @@ It includes detailed steps for configuring the:
 
 ---
 
-## **2. Deployment Configuration**
-
-# Step-by-Step Guide: ECS Service Configuration
-
-## **1. Environment**
-
-### **Launch Type**
-
-- **Launch Type**: Select `FARGATE`.
-  - **Explanation**: Fargate is a serverless compute engine that allows you to run containers without managing the underlying infrastructure.
-
----
 
 ## **2. Deployment Configuration**
 
