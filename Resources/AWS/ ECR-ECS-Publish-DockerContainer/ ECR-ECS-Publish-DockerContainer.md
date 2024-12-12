@@ -58,6 +58,10 @@ Set up an ECS service to maintain a specified number of task instances:
 
 - Define the desired task count.
 
+- Select the task definition family.
+
+- Configure the Networking
+
 - Configure load balancing (optional).
 
 - Set up task placement strategies and constraints.
