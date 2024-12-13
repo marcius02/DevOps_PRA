@@ -14,7 +14,9 @@ It includes detailed steps for configuring the:
 
 ---
 
-## **1. Create: Environment**
+Create:
+
+## **1. Environment**
 
 ### **Cluster**
 
@@ -64,7 +66,7 @@ It includes detailed steps for configuring the:
 - Default: `200%` (or adjust as needed).
   - **Explanation**: Allows this percentage of tasks to run during deployments, including both old and new tasks.
 
-This configuration ensures that your ECS service is set up with a serverless launch type, uses a replica service type for high availability, and deploys updates with minimal disruption.
+This configuration ensures that your ECS service is set up with a serverless launch type, <mark>uses a replica service type for high availability, </mark>and deploys updates with minimal disruption.
 
 **Explanation**: Deployment configuration determines how tasks are replaced during updates to ensure availability.
 
@@ -78,11 +80,11 @@ This configuration ensures that your ECS service is set up with a serverless lau
 
 ### **Subnets**
 
-- Choose at least two subnets in different Availability Zones for high availability.
+- Choose at least *two subnets in different Availability Zones for high availability.*
 
 ### **Security Group**
 
-- Select or create a security group with the following inbound rules:
+- Select or create a `security group` with the following<mark> inbound rules</mark>:
   - **Custom TCP Rule**: Port 80, Source: Anywhere (`0.0.0.0/0`) – Allows HTTP traffic to reach the load balancer.
   - **Custom TCP Rule**: Port 8080, Source: Anywhere (`0.0.0.0/0`) – Allows traffic from the load balancer to reach containers.
   - **HTTP Rule**: Port 80, Source: Anywhere (`0.0.0.0/0`) – Enables web traffic.
@@ -101,6 +103,10 @@ This configuration ensures that your ECS service is set up with a serverless lau
 
 - Select `Application Load Balancer (ALB)` for HTTP/HTTPS traffic.
 
+**Container**
+
+- Host Port: Container Port: `8080:8080` (HTTP).
+
 ### **Listener Configuration**
 
 - Listener Port: `80` (HTTP).
@@ -111,14 +117,14 @@ This configuration ensures that your ECS service is set up with a serverless lau
    
    - Name: Enter a name (e.g., `booksback-target-group`).
    - Protocol: `HTTP`.
-   - Port: `8080` (the port your container listens on).
-   - Target Type: `IP` (for Fargate tasks).
+   - Port: `80` (the port your container listens on).
+   - (*Optional*) Target Type: `IP` (for Fargate tasks).
 
 2. Configure health checks:
    
-   - Path: `/` or a specific endpoint for health checks.
-   - Healthy Threshold: Default value or adjust as needed.
-   - Interval and Timeout: Use default values unless specific requirements exist.
+   - Path: `/api/books` or a specific<mark> endpoint for health checks</mark>.
+   - (*Optional*) Healthy Threshold: Default value or adjust as needed.
+   - (*Optional*) Interval and Timeout: Use default values unless specific requirements exist.
 
 3. Register Targets:
    
@@ -131,7 +137,7 @@ This configuration ensures that your ECS service is set up with a serverless lau
 ## **5. Review and Create**
 
 1. Review all configurations, including environment, deployment, networking, and load balancing.
-2. Click "Create Service" to deploy your ECS service.
+2. Click "<mark>Create Service</mark>" to deploy your ECS service.
 
 ---
 
@@ -139,8 +145,8 @@ This configuration ensures that your ECS service is set up with a serverless lau
 
 After creating the service:
 
-1. Go to the "Tasks" tab in your cluster to verify that tasks are running.
+1. Go to the "Tasks" tab in your cluster to <mark>verify that tasks are running.</mark>
 2. Check the ALB's target group health status to ensure targets are healthy.
-3. Test accessing your application via the ALB's DNS name or public IP.
+3. Test accessing your application via the <mark>ALB's DNS name or public IP.</mark>
 
-This setup ensures that traffic flows from the internet through the Application Load Balancer on port 80 and is forwarded securely to containers listening on port 8080.
+> This setup ensures that **traffic flows from the internet through the Application Load Balancer on port 80** and is forwarded securely to containers listening on port 8080.
