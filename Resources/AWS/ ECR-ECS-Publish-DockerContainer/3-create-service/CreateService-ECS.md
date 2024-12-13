@@ -37,7 +37,6 @@ It includes detailed steps for configuring the:
 
 ---
 
-
 ## **2. Deployment Configuration**
 
 ### **Service Type**
@@ -64,8 +63,6 @@ It includes detailed steps for configuring the:
 
 - Default: `200%` (or adjust as needed).
   - **Explanation**: Allows this percentage of tasks to run during deployments, including both old and new tasks.
-
-
 
 This configuration ensures that your ECS service is set up with a serverless launch type, uses a replica service type for high availability, and deploys updates with minimal disruption.
 
