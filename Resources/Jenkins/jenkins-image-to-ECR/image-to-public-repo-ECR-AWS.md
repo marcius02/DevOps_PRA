@@ -9,18 +9,23 @@ To create a Jenkins pipeline stage for **pushing a Docker image to an AWS ECR pu
 2. **Install Required Plugins**:
    
    - Install the Amazon ECR plugin from the Jenkins Plugin Manager to handle Docker authentication tokens.
-3- **Install AWS CLI:**
-   1- Access the Jenkins container and once inside the container, run the following commands to install the AWS CLI:
-      
-      `apt-get update
+
+3. **Install AWS CLI:**
+   
+   - Access the Jenkins container and once inside the container, run the following commands to install the AWS CLI, <mark>.after exiting and restarting</mark>.:
+
+```groovy
+      apt-get update
       apt-get install -y unzip curl
       curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
       unzip awscliv2.zip
       ./aws/install
-      aws --version`
-   2- eixt and restart
+      aws --version
+```
 
-4. **Pipeline Configuration**:
+  
+
+5. **Pipeline Configuration**:
    
    - Use the following pipeline script:
 
