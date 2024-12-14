@@ -1,0 +1,124 @@
+Started by user Albert Profe
+
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins
+ in /var/jenkins_home/workspace/pipe-3
+[Pipeline] {
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Pull from DockerHub)
+[Pipeline] sh
++ docker pull w3564/books-frontend:latest
+latest: Pulling from w3564/books-frontend
+Digest: sha256:5048fe69e66769241e460bc8e4d1cf9836d5b197a0b8b07a714fa0c6d93e47ac
+Status: Downloaded newer image for w3564/books-frontend:latest
+docker.io/w3564/books-frontend:latest
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Tag for ECR)
+[Pipeline] sh
++ docker tag w3564/books-frontend:latest public.ecr.aws/s4x3q8t5/books/books-frontend:9
+[Pipeline] sh
++ docker tag w3564/books-frontend:latest public.ecr.aws/s4x3q8t5/books/books-frontend:latest
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Push to ECR)
+[Pipeline] withCredentials
+Masking supported pattern matches of $AWS_ACCESS_KEY_ID or $AWS_SECRET_ACCESS_KEY
+[Pipeline] {
+[Pipeline] sh
++ aws ecr-public get-login-password --region us-east-1
++ docker login --username AWS --password-stdin public.ecr.aws/s4x3q8t5
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credential-stores
+
+Login Succeeded
+[Pipeline] sh
++ docker push public.ecr.aws/s4x3q8t5/books/books-frontend:9
+The push refers to repository [public.ecr.aws/s4x3q8t5/books/books-frontend]
+3311e9809782: Preparing
+5f70bf18a086: Preparing
+2430c01bea64: Preparing
+b11b58162504: Preparing
+8b5ce426f73d: Preparing
+884b72c14f15: Preparing
+4a37d1b49911: Preparing
+4e8a0009474a: Preparing
+287563f25f8b: Preparing
+75654b8eeebd: Preparing
+4a37d1b49911: Waiting
+4e8a0009474a: Waiting
+287563f25f8b: Waiting
+75654b8eeebd: Waiting
+884b72c14f15: Waiting
+8b5ce426f73d: Pushed
+5f70bf18a086: Pushed
+b11b58162504: Pushed
+3311e9809782: Pushed
+4a37d1b49911: Pushed
+884b72c14f15: Pushed
+4e8a0009474a: Pushed
+2430c01bea64: Pushed
+287563f25f8b: Pushed
+75654b8eeebd: Pushed
+9: digest: sha256:5048fe69e66769241e460bc8e4d1cf9836d5b197a0b8b07a714fa0c6d93e47ac size: 2405
+[Pipeline] sh
++ docker push public.ecr.aws/s4x3q8t5/books/books-frontend:latest
+The push refers to repository [public.ecr.aws/s4x3q8t5/books/books-frontend]
+3311e9809782: Preparing
+5f70bf18a086: Preparing
+2430c01bea64: Preparing
+b11b58162504: Preparing
+8b5ce426f73d: Preparing
+884b72c14f15: Preparing
+4a37d1b49911: Preparing
+4e8a0009474a: Preparing
+287563f25f8b: Preparing
+75654b8eeebd: Preparing
+884b72c14f15: Waiting
+4a37d1b49911: Waiting
+4e8a0009474a: Waiting
+75654b8eeebd: Waiting
+287563f25f8b: Waiting
+8b5ce426f73d: Layer already exists
+3311e9809782: Layer already exists
+b11b58162504: Layer already exists
+5f70bf18a086: Layer already exists
+2430c01bea64: Layer already exists
+884b72c14f15: Layer already exists
+4e8a0009474a: Layer already exists
+4a37d1b49911: Layer already exists
+287563f25f8b: Layer already exists
+75654b8eeebd: Layer already exists
+latest: digest: sha256:5048fe69e66769241e460bc8e4d1cf9836d5b197a0b8b07a714fa0c6d93e47ac size: 2405
+[Pipeline] }
+[Pipeline] // withCredentials
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Declarative: Post Actions)
+[Pipeline] sh
++ docker rmi w3564/books-frontend:latest
+Untagged: w3564/books-frontend:latest
+Untagged: w3564/books-frontend@sha256:5048fe69e66769241e460bc8e4d1cf9836d5b197a0b8b07a714fa0c6d93e47ac
+[Pipeline] sh
++ docker rmi public.ecr.aws/s4x3q8t5/books/books-frontend:9
+Untagged: public.ecr.aws/s4x3q8t5/books/books-frontend:9
+[Pipeline] sh
++ docker rmi public.ecr.aws/s4x3q8t5/books/books-frontend:latest
+Untagged: public.ecr.aws/s4x3q8t5/books/books-frontend:latest
+Untagged: public.ecr.aws/s4x3q8t5/books/books-frontend@sha256:5048fe69e66769241e460bc8e4d1cf9836d5b197a0b8b07a714fa0c6d93e47ac
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
+
