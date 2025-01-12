@@ -11,3 +11,9 @@
 [2024-12-04 00:48:09] - Quarto publishing process completed successfully
 [2025-01-12 23:43:44] - Error: No commit message provided
 [2025-01-12 23:44:04] - Starting Quarto publishing process
+[2025-01-12 23:44:04] - Changes committed successfully
+[2025-01-12 23:44:05] - Changes pushed to remote repository
+[2025-01-12 23:44:08] - Quarto site published successfully
+[2025-01-12 23:44:08] - Quarto publishing process completed successfully
+[2025-01-12 23:49:22] - Error: No commit message provided
+[2025-01-12 23:49:53] - Starting Quarto publishing process
