@@ -23,49 +23,49 @@
   {
     "objectID": "10_week_plan.html",
     "href": "10_week_plan.html",
-    "title": "My 10-Week DevOps Learning Plan",
+    "title": "My 10 week plan",
     "section": "",
     "text": "This is my 10-week plan for the upcoming SCRUM sprints, focusing on Python programming, bash scripting, and DevOps skills development.\n\n\n\nComplete Python MOOC 2024 exercises\nLearn bash scripting\nDevelop DevOps skills, particularly in pipelines\nBalance learning with work and personal commitments\n\n\n“The only way to learn a new programming language is by writing programs in it.” - Dennis Ritchie\n\n\n\n\nHere’s a simple Python function that prints “Hello, World!”:\ndef hello_world():\n    \"\"\"Print a greeting to the world.\"\"\"\n    print(\"Hello, World!\")\n\nhello_world()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSprint\nStart Date\nEnd Date\nMain Goal\nDescription and Contents\n\n\n\n\n1\n2025-01-13\n2025-01-26\nProject Initiation & Python Basics\n- Set up learning environment- Complete Python MOOC Part 3- Introduction to bash scripting- Research DevOps fundamentals\n\n\n2\n2025-01-27\n2025-02-09\nPython Functions & DevOps Concepts\n- Complete Python MOOC Part 4- Basic bash scripting exercises- Introduction to CI/CD concepts\n\n\n3\n2025-02-10\n2025-02-23\nAdvanced Python & Bash\n- Complete Python MOOC Part 5- Intermediate bash scripting- Set up a basic CI pipeline\n\n\n4\n2025-02-24\n2025-03-09\nFile Handling & Error Management\n- Complete Python MOOC Part 6- Advanced bash scripting- Explore containerization basics\n\n\n5\n2025-03-10\n2025-03-23\nPython Modules & DevOps Tools\n- Complete Python MOOC Part 7- Bash scripting for automation- Introduction to Docker\n\n\n6\n2025-03-24\n2025-04-06\nOOP in Python & CI/CD\n- Start Advanced Course: Part 8- Bash scripting projects- Set up a complete CI/CD pipeline\n\n\n7\n2025-04-07\n2025-04-20\nAdvanced OOP & Infrastructure as Code\n- Complete Advanced Course Part 9- Bash scripting for system administration- Introduction to Infrastructure as Code\n\n\n8\n2025-04-21\n2025-05-04\nPython Techniques & Monitoring\n- Complete Advanced Course Part 10- Bash scripting for log analysis- Implement basic monitoring in pipeline\n\n\n9\n2025-05-05\n2025-05-18\nFunctional Programming & Security\n- Complete Advanced Course Part 11- Secure bash scripting practices- Implement security checks in pipeline\n\n\n10\n2025-05-19\n2025-06-01\nFinal Project & DevOps Integration\n- Complete Advanced Course Parts 12-14- Integrate all learned skills in a final project- Refine and optimize DevOps pipeline\n\n\n\n\n\n\n\nMonday: 1 hour morning study, 2 hours afternoon study (17:00-19:00), English class at 20:15\nTuesday: 1 hour morning study, 2 hours afternoon study (17:00-19:00), 1.5 hours gym\nWednesday: Flexible study time, 1.5 hours gym, English class at 20:15\nThursday: 1 hour morning study, 2 hours afternoon study (17:00-19:00)\nFriday: 1 hour morning study, 2 hours afternoon study (17:00-19:00), 1.5 hours gym\nSaturday: Flexible study time until 16:45, resume at 19:00\nSunday: Flexible study time all day\n\n\n\n\n\n\n\nMilestone 1: Complete Python MOOC Parts 3-7 by March 23, 2025\nMilestone 2: Implement a fully functional CI/CD pipeline by April 20, 2025\nMilestone 3: Complete Advanced Python Course and integrate all skills in a final project by June 1, 2025\n\n\n\n\n\nWeekly progress reports on Python MOOC exercises\nBash scripting portfolio with at least 10 useful scripts\nFully documented CI/CD pipeline implementation\nFinal project demonstrating Python, bash, and DevOps skills integration\n\n\n\n\n\nThis 10-week plan provides a structured approach to learning Python, bash scripting, and DevOps skills. Regular reviews and adjustments will be made to ensure steady progress towards the goals.\n\n\n\n\n\n\nPython Programming MOOC 2024\nReal Python\nPython Official Documentation\n\n\n\n\n\nBash Scripting Tutorial for Beginners\nAdvanced Bash-Scripting Guide\nExercism Bash Track\n\n\n\n\n\nDevOps Roadmap\nGitLab CI/CD Documentation\nJenkins Tutorial\nDocker Getting Started Guide"
   },
   {
     "objectID": "10_week_plan.html#introduction",
     "href": "10_week_plan.html#introduction",
-    "title": "My 10-Week DevOps Learning Plan",
+    "title": "My 10 week plan",
     "section": "",
     "text": "This is my 10-week plan for the upcoming SCRUM sprints, focusing on Python programming, bash scripting, and DevOps skills development.\n\n\n\nComplete Python MOOC 2024 exercises\nLearn bash scripting\nDevelop DevOps skills, particularly in pipelines\nBalance learning with work and personal commitments\n\n\n“The only way to learn a new programming language is by writing programs in it.” - Dennis Ritchie\n\n\n\n\nHere’s a simple Python function that prints “Hello, World!”:\ndef hello_world():\n    \"\"\"Print a greeting to the world.\"\"\"\n    print(\"Hello, World!\")\n\nhello_world()"
   },
   {
     "objectID": "10_week_plan.html#week-planning-table",
     "href": "10_week_plan.html#week-planning-table",
-    "title": "My 10-Week DevOps Learning Plan",
+    "title": "My 10 week plan",
     "section": "",
     "text": "Sprint\nStart Date\nEnd Date\nMain Goal\nDescription and Contents\n\n\n\n\n1\n2025-01-13\n2025-01-26\nProject Initiation & Python Basics\n- Set up learning environment- Complete Python MOOC Part 3- Introduction to bash scripting- Research DevOps fundamentals\n\n\n2\n2025-01-27\n2025-02-09\nPython Functions & DevOps Concepts\n- Complete Python MOOC Part 4- Basic bash scripting exercises- Introduction to CI/CD concepts\n\n\n3\n2025-02-10\n2025-02-23\nAdvanced Python & Bash\n- Complete Python MOOC Part 5- Intermediate bash scripting- Set up a basic CI pipeline\n\n\n4\n2025-02-24\n2025-03-09\nFile Handling & Error Management\n- Complete Python MOOC Part 6- Advanced bash scripting- Explore containerization basics\n\n\n5\n2025-03-10\n2025-03-23\nPython Modules & DevOps Tools\n- Complete Python MOOC Part 7- Bash scripting for automation- Introduction to Docker\n\n\n6\n2025-03-24\n2025-04-06\nOOP in Python & CI/CD\n- Start Advanced Course: Part 8- Bash scripting projects- Set up a complete CI/CD pipeline\n\n\n7\n2025-04-07\n2025-04-20\nAdvanced OOP & Infrastructure as Code\n- Complete Advanced Course Part 9- Bash scripting for system administration- Introduction to Infrastructure as Code\n\n\n8\n2025-04-21\n2025-05-04\nPython Techniques & Monitoring\n- Complete Advanced Course Part 10- Bash scripting for log analysis- Implement basic monitoring in pipeline\n\n\n9\n2025-05-05\n2025-05-18\nFunctional Programming & Security\n- Complete Advanced Course Part 11- Secure bash scripting practices- Implement security checks in pipeline\n\n\n10\n2025-05-19\n2025-06-01\nFinal Project & DevOps Integration\n- Complete Advanced Course Parts 12-14- Integrate all learned skills in a final project- Refine and optimize DevOps pipeline"
   },
   {
     "objectID": "10_week_plan.html#daily-schedule",
     "href": "10_week_plan.html#daily-schedule",
-    "title": "My 10-Week DevOps Learning Plan",
+    "title": "My 10 week plan",
     "section": "",
     "text": "Monday: 1 hour morning study, 2 hours afternoon study (17:00-19:00), English class at 20:15\nTuesday: 1 hour morning study, 2 hours afternoon study (17:00-19:00), 1.5 hours gym\nWednesday: Flexible study time, 1.5 hours gym, English class at 20:15\nThursday: 1 hour morning study, 2 hours afternoon study (17:00-19:00)\nFriday: 1 hour morning study, 2 hours afternoon study (17:00-19:00), 1.5 hours gym\nSaturday: Flexible study time until 16:45, resume at 19:00\nSunday: Flexible study time all day"
   },
   {
     "objectID": "10_week_plan.html#project-roadmap",
     "href": "10_week_plan.html#project-roadmap",
-    "title": "My 10-Week DevOps Learning Plan",
+    "title": "My 10 week plan",
     "section": "",
     "text": "Milestone 1: Complete Python MOOC Parts 3-7 by March 23, 2025\nMilestone 2: Implement a fully functional CI/CD pipeline by April 20, 2025\nMilestone 3: Complete Advanced Python Course and integrate all skills in a final project by June 1, 2025\n\n\n\n\n\nWeekly progress reports on Python MOOC exercises\nBash scripting portfolio with at least 10 useful scripts\nFully documented CI/CD pipeline implementation\nFinal project demonstrating Python, bash, and DevOps skills integration"
   },
   {
     "objectID": "10_week_plan.html#conclusion",
     "href": "10_week_plan.html#conclusion",
-    "title": "My 10-Week DevOps Learning Plan",
+    "title": "My 10 week plan",
     "section": "",
     "text": "This 10-week plan provides a structured approach to learning Python, bash scripting, and DevOps skills. Regular reviews and adjustments will be made to ensure steady progress towards the goals."
   },
   {
     "objectID": "10_week_plan.html#learning-resources",
     "href": "10_week_plan.html#learning-resources",
-    "title": "My 10-Week DevOps Learning Plan",
+    "title": "My 10 week plan",
     "section": "",
     "text": "Python Programming MOOC 2024\nReal Python\nPython Official Documentation\n\n\n\n\n\nBash Scripting Tutorial for Beginners\nAdvanced Bash-Scripting Guide\nExercism Bash Track\n\n\n\n\n\nDevOps Roadmap\nGitLab CI/CD Documentation\nJenkins Tutorial\nDocker Getting Started Guide"
   }
