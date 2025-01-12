@@ -37,3 +37,8 @@
 [2025-01-13 00:17:06] - Quarto site published successfully
 [2025-01-13 00:17:06] - Quarto publishing process completed successfully
 [2025-01-13 00:21:03] - Starting Quarto publishing process
+[2025-01-13 00:21:04] - Changes committed successfully
+[2025-01-13 00:21:05] - Changes pushed to remote repository
+[2025-01-13 00:21:08] - Quarto site published successfully
+[2025-01-13 00:21:08] - Quarto publishing process completed successfully
+[2025-01-13 00:23:26] - Starting Quarto publishing process
