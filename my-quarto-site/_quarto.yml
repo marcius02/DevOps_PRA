@@ -7,10 +7,13 @@ website:
     left:
       - href: index.qmd
         text: Home
+        
       - href: 10_week_plan.md
         text: My 10 week plan
+        
       - href: about.qmd
         text: About
+        
       - href: contact.qmd
         text: Contact
 
