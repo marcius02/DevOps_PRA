@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Contact – My Quarto site</title>
+<title>week_plan – My Quarto site</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -92,15 +126,15 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./devops_pra.html"> 
-<span class="menu-text">DevOps_PRA</span></a>
+    <a class="nav-link active" href="./10_week_plan.html" aria-current="page"> 
+<span class="menu-text">My 10 week plan</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./contact.html" aria-current="page"> 
+    <a class="nav-link" href="./contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -114,35 +148,229 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#my-10-week-devops-learning-plan" id="toc-my-10-week-devops-learning-plan" class="nav-link active" data-scroll-target="#my-10-week-devops-learning-plan">My 10-Week DevOps Learning Plan</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points">Key Points:</a></li>
+  <li><a href="#sample-python-code" id="toc-sample-python-code" class="nav-link" data-scroll-target="#sample-python-code">Sample Python Code</a></li>
+  </ul></li>
+  <li><a href="#week-planning-table" id="toc-week-planning-table" class="nav-link" data-scroll-target="#week-planning-table">10-Week Planning Table</a></li>
+  <li><a href="#daily-schedule" id="toc-daily-schedule" class="nav-link" data-scroll-target="#daily-schedule">Daily Schedule</a></li>
+  <li><a href="#project-roadmap" id="toc-project-roadmap" class="nav-link" data-scroll-target="#project-roadmap">Project Roadmap</a>
+  <ul class="collapse">
+  <li><a href="#milestones" id="toc-milestones" class="nav-link" data-scroll-target="#milestones">Milestones</a></li>
+  <li><a href="#major-deliverables" id="toc-major-deliverables" class="nav-link" data-scroll-target="#major-deliverables">Major Deliverables</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#learning-resources" id="toc-learning-resources" class="nav-link" data-scroll-target="#learning-resources">Learning Resources</a>
+  <ul class="collapse">
+  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python">Python</a></li>
+  <li><a href="#bash-scripting" id="toc-bash-scripting" class="nav-link" data-scroll-target="#bash-scripting">Bash Scripting</a></li>
+  <li><a href="#devops-and-pipelines" id="toc-devops-and-pipelines" class="nav-link" data-scroll-target="#devops-and-pipelines">DevOps and Pipelines</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Contact</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
+<section id="my-10-week-devops-learning-plan" class="level1">
+<h1>My 10-Week DevOps Learning Plan</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>This is my <strong>10-week plan</strong> for the upcoming <em>SCRUM sprints</em>, focusing on Python programming, bash scripting, and DevOps skills development.</p>
+<section id="key-points" class="level3">
+<h3 class="anchored" data-anchor-id="key-points">Key Points:</h3>
+<ol type="1">
+<li>Complete Python MOOC 2024 exercises</li>
+<li>Learn bash scripting</li>
+<li>Develop DevOps skills, particularly in pipelines</li>
+<li>Balance learning with work and personal commitments</li>
+</ol>
+<blockquote class="blockquote">
+<p>“The only way to learn a new programming language is by writing programs in it.” - Dennis Ritchie</p>
+</blockquote>
+</section>
+<section id="sample-python-code" class="level3">
+<h3 class="anchored" data-anchor-id="sample-python-code">Sample Python Code</h3>
+<p>Here’s a simple Python function that prints “Hello, World!”:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> hello_world():</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Print a greeting to the world."""</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Hello, World!"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>hello_world()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="week-planning-table" class="level2">
+<h2 class="anchored" data-anchor-id="week-planning-table">10-Week Planning Table</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 17%">
+<col style="width: 14%">
+<col style="width: 16%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Sprint</th>
+<th>Start Date</th>
+<th>End Date</th>
+<th>Main Goal</th>
+<th>Description and Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>2025-01-13</td>
+<td>2025-01-26</td>
+<td>Project Initiation &amp; Python Basics</td>
+<td>- Set up learning environment<br>- Complete Python MOOC Part 3<br>- Introduction to bash scripting<br>- Research DevOps fundamentals</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>2025-01-27</td>
+<td>2025-02-09</td>
+<td>Python Functions &amp; DevOps Concepts</td>
+<td>- Complete Python MOOC Part 4<br>- Basic bash scripting exercises<br>- Introduction to CI/CD concepts</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>2025-02-10</td>
+<td>2025-02-23</td>
+<td>Advanced Python &amp; Bash</td>
+<td>- Complete Python MOOC Part 5<br>- Intermediate bash scripting<br>- Set up a basic CI pipeline</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>2025-02-24</td>
+<td>2025-03-09</td>
+<td>File Handling &amp; Error Management</td>
+<td>- Complete Python MOOC Part 6<br>- Advanced bash scripting<br>- Explore containerization basics</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>2025-03-10</td>
+<td>2025-03-23</td>
+<td>Python Modules &amp; DevOps Tools</td>
+<td>- Complete Python MOOC Part 7<br>- Bash scripting for automation<br>- Introduction to Docker</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>2025-03-24</td>
+<td>2025-04-06</td>
+<td>OOP in Python &amp; CI/CD</td>
+<td>- Start Advanced Course: Part 8<br>- Bash scripting projects<br>- Set up a complete CI/CD pipeline</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>2025-04-07</td>
+<td>2025-04-20</td>
+<td>Advanced OOP &amp; Infrastructure as Code</td>
+<td>- Complete Advanced Course Part 9<br>- Bash scripting for system administration<br>- Introduction to Infrastructure as Code</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>2025-04-21</td>
+<td>2025-05-04</td>
+<td>Python Techniques &amp; Monitoring</td>
+<td>- Complete Advanced Course Part 10<br>- Bash scripting for log analysis<br>- Implement basic monitoring in pipeline</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>2025-05-05</td>
+<td>2025-05-18</td>
+<td>Functional Programming &amp; Security</td>
+<td>- Complete Advanced Course Part 11<br>- Secure bash scripting practices<br>- Implement security checks in pipeline</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>2025-05-19</td>
+<td>2025-06-01</td>
+<td>Final Project &amp; DevOps Integration</td>
+<td>- Complete Advanced Course Parts 12-14<br>- Integrate all learned skills in a final project<br>- Refine and optimize DevOps pipeline</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="daily-schedule" class="level2">
+<h2 class="anchored" data-anchor-id="daily-schedule">Daily Schedule</h2>
+<ul>
+<li><strong>Monday</strong>: 1 hour morning study, 2 hours afternoon study (17:00-19:00), English class at 20:15</li>
+<li><strong>Tuesday</strong>: 1 hour morning study, 2 hours afternoon study (17:00-19:00), 1.5 hours gym</li>
+<li><strong>Wednesday</strong>: Flexible study time, 1.5 hours gym, English class at 20:15</li>
+<li><strong>Thursday</strong>: 1 hour morning study, 2 hours afternoon study (17:00-19:00)</li>
+<li><strong>Friday</strong>: 1 hour morning study, 2 hours afternoon study (17:00-19:00), 1.5 hours gym</li>
+<li><strong>Saturday</strong>: Flexible study time until 16:45, resume at 19:00</li>
+<li><strong>Sunday</strong>: Flexible study time all day</li>
+</ul>
+</section>
+<section id="project-roadmap" class="level2">
+<h2 class="anchored" data-anchor-id="project-roadmap">Project Roadmap</h2>
+<section id="milestones" class="level3">
+<h3 class="anchored" data-anchor-id="milestones">Milestones</h3>
+<ol type="1">
+<li><strong>Milestone 1</strong>: Complete Python MOOC Parts 3-7 by March 23, 2025</li>
+<li><strong>Milestone 2</strong>: Implement a fully functional CI/CD pipeline by April 20, 2025</li>
+<li><strong>Milestone 3</strong>: Complete Advanced Python Course and integrate all skills in a final project by June 1, 2025</li>
+</ol>
+</section>
+<section id="major-deliverables" class="level3">
+<h3 class="anchored" data-anchor-id="major-deliverables">Major Deliverables</h3>
+<ul>
+<li>Weekly progress reports on Python MOOC exercises</li>
+<li>Bash scripting portfolio with at least 10 useful scripts</li>
+<li>Fully documented CI/CD pipeline implementation</li>
+<li>Final project demonstrating Python, bash, and DevOps skills integration</li>
+</ul>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>This 10-week plan provides a structured approach to learning Python, bash scripting, and DevOps skills. Regular reviews and adjustments will be made to ensure steady progress towards the goals.</p>
+</section>
+<section id="learning-resources" class="level2">
+<h2 class="anchored" data-anchor-id="learning-resources">Learning Resources</h2>
+<section id="python" class="level3">
+<h3 class="anchored" data-anchor-id="python">Python</h3>
+<ul>
+<li><a href="https://programming-24.mooc.fi/">Python Programming MOOC 2024</a></li>
+<li><a href="https://realpython.com/">Real Python</a></li>
+<li><a href="https://docs.python.org/3/">Python Official Documentation</a></li>
+</ul>
+</section>
+<section id="bash-scripting" class="level3">
+<h3 class="anchored" data-anchor-id="bash-scripting">Bash Scripting</h3>
+<ul>
+<li><a href="https://linuxconfig.org/bash-scripting-tutorial-for-beginners">Bash Scripting Tutorial for Beginners</a></li>
+<li><a href="https://tldp.org/LDP/abs/html/">Advanced Bash-Scripting Guide</a></li>
+<li><a href="https://exercism.org/tracks/bash">Exercism Bash Track</a></li>
+</ul>
+</section>
+<section id="devops-and-pipelines" class="level3">
+<h3 class="anchored" data-anchor-id="devops-and-pipelines">DevOps and Pipelines</h3>
+<ul>
+<li><a href="https://roadmap.sh/devops">DevOps Roadmap</a></li>
+<li><a href="https://docs.gitlab.com/ee/ci/">GitLab CI/CD Documentation</a></li>
+<li><a href="https://www.jenkins.io/doc/tutorials/">Jenkins Tutorial</a></li>
+<li><a href="https://docs.docker.com/get-started/">Docker Getting Started Guide</a></li>
+</ul>
 
 
-</header>
-
-
-<p><strong>Email</strong>: marcfernandezz1011@gmail.com</p>
-<p><strong>Github</strong>: <a href="https://github.com/marcius02" class="uri">https://github.com/marcius02</a></p>
-
-
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
